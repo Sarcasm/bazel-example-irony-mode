@@ -23,3 +23,14 @@ The steps to reproduce are simple:
 
 Credit to [this gist](https://gist.github.com/bsilver8192/0115ee5d040bb601e3b7)
 for how to generate a `compile_commands.json` file from `bazel`.
+
+
+# Sarcasm notes
+
+Because of Python 2/3 issues I regenerated the protoc like this:
+
+    protoc extra_actions_base.proto --python_out=.
+
+Some details about the compilation database generation for irony-mode:
+
+- https://github.com/Sarcasm/irony-mode/issues/371#issuecomment-291290687
